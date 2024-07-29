@@ -1,0 +1,151 @@
+/* Reset básico para todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* Exibição de bloco para elementos HTML5 */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* Estilos básicos */
+body {
+  line-height: 1;
+  background-image: url("./texture.png");
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Estilos do Header */
+header {
+  margin: 44px 0 60px;
+  text-align: center;
+}
+
+/* Estilos do Main */
+main {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 44px;
+}
+
+/* Estilos do Article */
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 30px;
+  border: 1px solid #cfb98c;
+  background-image: url("./texture.png");
+}
+
+article div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 321px;
+}
+
+article a img {
+  width: 366.33px;
+  height: 269px;
+  object-fit: cover;
+}
+
+/* Estilos dos Títulos e Parágrafos */
+h1, h3 {
+  font-family: "EB Garamond";
+  font-style: italic;
+  color: #402813;
+}
+
+h1 {
+  font-size: 58.29px;
+}
+
+h3 {
+  height: 31px;
+  font-size: 31.3px;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  letter-spacing: 1px;
+}
+
+h2, p {
+  font-family: "Baskervville";
+  font-style: italic;
+  color: #a67246;
+  line-height: 21px;
+}
+
+h2 {
+  font-size: 35.3px;
+  line-height: 44px;
+}
+
+p {
+  height: 64px;
+  font-size: 19.38px;
+  overflow-x: hidden;
+}
+
+p::-webkit-scrollbar {
+  display: none;
+}
+
+p {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Estilos da Seção */
+section {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 44px 60px;
+}
+
+@media (max-width: 1218px) {
+  section {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media (max-width: 792px) {
+  header {
+    margin-bottom: 44px;
+  }
+
+  h2 {
+    font-size: 29.38px;
+    line-height: 33px;
+  }
+
+  section {
+    grid-template-columns: 1fr;
+  }
+}
